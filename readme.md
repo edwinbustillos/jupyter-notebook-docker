@@ -12,7 +12,7 @@ Este projeto fornece um ambiente de desenvolvimento para Python 3 utilizando Jup
 ### 1. Clone este repositório
 
 ```bash
-git clone https://github.com/seu-usuario/jupyter-docker-compose.git
+git clone https://github.com/edwinbustillos/jupyter-notebook-docker
 cd jupyter-docker-compose
 ```
 
