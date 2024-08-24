@@ -1,0 +1,18 @@
+services:
+  jupyter:
+    image: jupyter/base-notebook:latest
+    #image: jupyter/minimal-notebook:latest
+    #image: jupyter/r-notebook:latest
+    #image: jupyter/scipy-notebook:latest
+    #image: jupyter/tensorflow-notebook:latest
+    #image: jupyter/pyspark-notebook:latest
+    #image: jupyter/all-spark-notebook:latest
+    #image: jupyter/datascience-notebook:latest
+    container_name: jupyter_notebook
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    ports:
+      - "8888:8888"
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    command: start-notebook.sh --NotebookApp.token=''
